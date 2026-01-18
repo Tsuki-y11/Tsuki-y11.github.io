@@ -1,51 +1,59 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.vuejs.org/config/app-configs
 export default defineConfig({
   title: "Tsuki-y11",
-  description: "二叉搜索树、AVL树学习笔记",
+  description: "学习笔记",
+  
   themeConfig: {
-    // 顶部导航
     nav: [
       { text: '首页', link: '/' },
-      { text: '数据结构', link: '/data-structures/binary-search-tree' },
-      { text: '算法', link: '/algorithms/' },
-      { text: 'GitHub', link: 'https://github.com/Tsuki-y11' }
+      { text: 'Note', link: '/' },
+      { text: 'GitHub', link: 'https://github.com/Tsuki-y11' }  // ✅ 删除末尾空格
     ],
     
-    // 侧边栏（最关键）
-    sidebar: {
-      // 数据结构分类
-      '/data-structures/': [
-        {
-          text: '树结构',
-          collapsed: false, // 默认展开
-          items: [
-            { text: '二叉搜索树', link: '/data-structures/binary-search-tree' },
-            { text: 'AVL树', link: '/data-structures/avl-tree' },
-            { text: '红黑树', link: '/data-structures/red-black-tree' }
-          ]
-        },
-        {
-          text: '图结构',
-          collapsed: true, // 默认折叠
-          items: [
-            { text: 'DFS与BFS', link: '/data-structures/dfs-bfs' },
-            { text: '最短路径', link: '/data-structures/shortest-path' }
-          ]
-        }
-      ],
-      
-      // 算法分类
-      '/algorithms/': [
-        {
-          text: '基础算法',
-          items: [
-            { text: '排序算法', link: '/algorithms/sorting' },
-            { text: '搜索算法', link: '/algorithms/searching' }
-          ]
-        }
-      ]
-    }
+    sidebar: [
+      {
+        text: '📚 全部笔记',
+        collapsed: false,
+        items: [
+          {
+            text: '大一上',
+            items: [
+              { text: '排序算法', link: '/algorithm/sorting' },
+              { text: '搜索算法', link: '/algorithm/searching' },
+              { text: '动态规划', link: '/algorithm/dp' }
+            ]
+          },
+          {
+            text: '大一下',
+            items: [
+              { text: 'SWDW', link: '/bayesian-network/probability' },
+              { text: 'OOP', link: '/bayesian-network/structure' },
+              { text: 'Discrete Math', link: '/bayesian-network/inference' }
+            ]
+          },
+          {
+            text: '大二上',
+            items: [
+              { text: 'Computer Organization', link: '/bioinformatics/sequence-alignment' },
+              { text: 'Data Structure & Algorithm', link: '/bioinformatics/gene-prediction' },
+              { text: 'Database Management System', link: '/compiler-construction/lecture/compiler-introduction' },  // ✅ 补全 link
+              { text: 'Probability & Statistic', link: '/compiler-construction/lecture/compiler-lexical-analysis' }  // ✅ 补全 link
+            ]
+          },
+          {
+            text: '大二下',
+            items: [
+              { text: '编译器简介', link: '/compiler-construction/lecture/compiler-introduction' },
+              { text: '词法分析', link: '/compiler-construction/lecture/compiler-lexical-analysis' },
+              { text: '语法分析', link: '/compiler-construction/lecture/compiler-syntax-analysis' },
+              { text: '语义分析', link: '/compiler-construction/lecture/compiler-semantic-analysis' },
+              { text: '中间代码生成', link: '/compiler-construction/lecture/compiler-intermediate-code' },
+              { text: 'First集与Follow集', link: '/compiler-construction/lecture/compiler-first-follow-set' }
+            ]
+          }
+        ]
+      }
+    ]
   }
 })
