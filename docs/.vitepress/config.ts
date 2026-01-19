@@ -8,7 +8,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Note', link: '/' },
+      { text: 'Note', link: '/Y1S1/C/basic' },  // 修改这里
       { text: 'GitHub', link: 'https://github.com/Tsuki-y11' }
     ],
     
@@ -35,7 +35,7 @@ export default defineConfig({
                   { text: 'Recursion', link: '/Y1S1/C/recursion' },
                   { text: 'String', link: '/Y1S1/C/string' },
                   { text: 'Structure Enumeration', link: '/Y1S1/C/structure' },
-                  { text: 'Pointers', link: '/Y1S1/C/poniters' },
+                  { text: 'Pointers', link: '/Y1S1/C/pointers' },  // 修改这里
                   { text: 'File', link: '/Y1S1/C/file' },
                   { text: 'Dynamic Memory', link: '/Y1S1/C/memory' }
                 ]
@@ -47,7 +47,8 @@ export default defineConfig({
           {
             text: 'Y1S2',
             items: [
-              { text: 'Systems & Web Development Workshop',
+              { 
+                text: 'Systems & Web Development Workshop',
                 collapsed: false,
                 items: [
                   { text: 'HtmlBasic', link: '/Y1S2/SWDW/1Ahtml'},
@@ -56,7 +57,7 @@ export default defineConfig({
                   { 
                     text: 'JavaScript',
                     collapsed: false,
-                    items:[
+                    items: [
                       { text: 'JS_IntroEvents', link: '/Y1S2/SWDW/4aJS_intro'},
                       { text: 'JS_Functions', link: '/Y1S2/SWDW/4bJS_functions'},
                       { text: 'JS_Variables', link: '/Y1S2/SWDW/5bJS_Variables'},
@@ -69,15 +70,15 @@ export default defineConfig({
                   {
                     text: 'PHP',
                     collapsed: false,
-                    items:[
-                        { text: 'PHP_Intro', link: '/Y1S2/SWDW/PHP_Intro'},
-                        { text: 'PHP_MySQL', link: '/Y1S2/SWDW/PHP_MySQL'},
-                        { text: 'Arrays', link: '/Y1S2/SWDW/PHP_Arrays'},
-                        { text: 'Echo & Print Statements', link: '/Y1S2/SWDW/PHP_Echo_Print_Statements'},
-                        { text: 'For loops', link: '/Y1S2/SWDW/PHP_for_loops'},
-                        { text: 'Functions', link: '/Y1S2/SWDW/PHP_Functions'},
-                        { text: 'If.else.elseif Statements', link: '/Y1S2/SWDW/PHP_if.else.elseif_Statements'},
-                        { text: 'Switch Statement', link: '/Y1S2/SWDW/PHP_switch_Statement'}
+                    items: [
+                      { text: 'PHP_Intro', link: '/Y1S2/SWDW/PHP_Intro'},
+                      { text: 'PHP_MySQL', link: '/Y1S2/SWDW/PHP_MySQL'},
+                      { text: 'Arrays', link: '/Y1S2/SWDW/PHP_Arrays'},
+                      { text: 'Echo & Print Statements', link: '/Y1S2/SWDW/PHP_Echo_Print_Statements'},
+                      { text: 'For loops', link: '/Y1S2/SWDW/PHP_for_loops'},
+                      { text: 'Functions', link: '/Y1S2/SWDW/PHP_Functions'},
+                      { text: 'If.else.elseif Statements', link: '/Y1S2/SWDW/PHP_if.else.elseif_Statements'},
+                      { text: 'Switch Statement', link: '/Y1S2/SWDW/PHP_switch_Statement'}
                     ]
                   },
                 ]
@@ -115,7 +116,7 @@ export default defineConfig({
                   {
                     text: 'Logic Design',
                     items: [
-                      { text: 'Logic Design', link: '/Y2S1/dbms/logic-design' }
+                      { text: 'Logic Design', link: '/Y1S1/dbms/logic-design' }  // ❌ 路径应该是 /Y2S1
                     ]
                   },
                   {
