@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/',
   title: "Tsuki-y11",
   description: "学习笔记",
   
@@ -13,7 +14,7 @@ export default defineConfig({
     
     sidebar: [
       {
-        text: '📚 全部笔记',
+        text: 'Notes',
         collapsed: false,
         items: [
           {
@@ -46,7 +47,41 @@ export default defineConfig({
           {
             text: 'Y1S2',
             items: [
-              { text: 'Systems & Web Development Workshop', link: '/Y1S2/swdw' },
+              { text: 'Systems & Web Development Workshop',
+                collapsed: false,
+                items: [
+                  { text: 'HtmlBasic', link: '/Y1S2/SWDW/1Ahtml'},
+                  { text: 'CSS', link: '/Y1S2/SWDW/1bcss'},
+                  { text: 'HtmlForms', link: '/Y1S2/SWDW/1cHtmlForms'},
+                  { 
+                    text: 'JavaScript',
+                    collapsed: false,
+                    items:[
+                      { text: 'JS_IntroEvents', link: '/Y1S2/SWDW/4aJS_intro'},
+                      { text: 'JS_Functions', link: '/Y1S2/SWDW/4bJS_functions'},
+                      { text: 'JS_Variables', link: '/Y1S2/SWDW/5bJS_Variables'},
+                      { text: 'JS_Condition', link: '/Y1S2/SWDW/5c_JS_Condition'},
+                      { text: 'JS_Loops', link: '/Y1S2/SWDW/5d_JS_Loops'},
+                      { text: 'JS_Arrays', link: '/Y1S2/SWDW/6a_JS_Arrays'},
+                      { text: 'JS_Objects', link: '/Y1S2/SWDW/6b_JS_Objects'},
+                    ]
+                  },
+                  {
+                    text: 'PHP',
+                    collapsed: false,
+                    items:[
+                        { text: 'PHP_Intro', link: '/Y1S2/SWDW/PHP_Intro'},
+                        { text: 'PHP_MySQL', link: '/Y1S2/SWDW/PHP_MySQL'},
+                        { text: 'Arrays', link: '/Y1S2/SWDW/PHP_Arrays'},
+                        { text: 'Echo & Print Statements', link: '/Y1S2/SWDW/PHP_Echo_Print_Statements'},
+                        { text: 'For loops', link: '/Y1S2/SWDW/PHP_for_loops'},
+                        { text: 'Functions', link: '/Y1S2/SWDW/PHP_Functions'},
+                        { text: 'If.else.elseif Statements', link: '/Y1S2/SWDW/PHP_if.else.elseif_Statements'},
+                        { text: 'Switch Statement', link: '/Y1S2/SWDW/PHP_switch_Statement'}
+                    ]
+                  },
+                ]
+              },
               {
                 text: 'Object-Oriented Programming',
                 collapsed: false,
